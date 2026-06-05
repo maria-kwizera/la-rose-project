@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin123",
+      "role": "Owner"
+    },
+    {
+      "username": "thomas",
+      "password": "welcome",
+      "role": "User"
+    }
+  ],
+  "sessions": {
+    "7b12ea37-2f74-410d-a7f7-60ff9e094672": {
+      "username": "admin",
+      "role": "Owner"
+    }
+  },
+  "notes": {
+    "index.html": "hi"
+  },
+  "data": {}
+}

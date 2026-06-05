@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accounting — La Rose</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">hh</div>
+      <div class="business-card">
+        <label>BUSINESS</label>
+        <select id="branch-select" title="Select business branch">
+          <option>hh</option>
+        </select>
+      </div>
+      <nav class="apps-list">
+        <a class="app-btn" href="index.html">Dashboard</a>
+        <a class="app-btn" href="inventory.html">Inventory</a>
+        <a class="app-btn" href="pos.html">POS</a>
+        <a class="app-btn" href="sales.html">Sales</a>
+        <a class="app-btn" href="purchases.html">Purchases</a>
+        <a class="app-btn active" href="accounting.html">Accounting</a>
+        <a class="app-btn" href="reports.html">Reports</a>
+        <a class="app-btn" href="users.html">Users</a>
+        <a class="app-btn" href="payroll.html">Payroll</a>
+        <a class="app-btn" href="truck.html">Truck</a>
+        <a class="app-btn" href="settings.html">Settings</a>
+        <a class="app-btn" href="apps.html">Installed Apps</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="left">Accounting</div>
+        <div class="right">Track cashflow</div>
+      </header>
+
+      <section class="grid">
+        <article class="card wide">
+          <h3>Overview</h3>
+          <div class="account-row">
+            <div class="stat in">SALES INFLOW<br><strong>USh 83,016,953</strong></div>
+            <div class="stat out">PURCHASE OUTFLOW<br><strong>USh 18,617,301</strong></div>
+            <div class="stat net">NET CASH POSITION<br><strong>USh 64,399,652</strong></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

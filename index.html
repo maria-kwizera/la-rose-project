@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — La Rose</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">hh</div>
+      <div class="business-card">
+        <label>BUSINESS</label>
+        <select id="branch-select" title="Select business branch">
+          <option>hh</option>
+          <option>Branch A</option>
+          <option>Branch B</option>
+        </select>
+      </div>
+      <nav class="apps-list">
+        <a class="app-btn" href="index.html">Dashboard</a>
+        <a class="app-btn" href="inventory.html">Inventory</a>
+        <a class="app-btn" href="pos.html">POS</a>
+        <a class="app-btn" href="sales.html">Sales</a>
+        <a class="app-btn" href="purchases.html">Purchases</a>
+        <a class="app-btn" href="accounting.html">Accounting</a>
+        <a class="app-btn" href="reports.html">Reports</a>
+        <a class="app-btn" href="users.html">Users</a>
+        <a class="app-btn" href="payroll.html">Payroll</a>
+        <a class="app-btn" href="truck.html">Truck</a>
+        <a class="app-btn" href="settings.html">Settings</a>
+        <a class="app-btn" href="apps.html">Installed Apps</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="left">Dashboard</div>
+        <div class="right">v1.0.0</div>
+      </header>
+
+      <section class="grid">
+        <article class="card">
+          <h3>Installed Apps</h3>
+          <div class="tiles">
+            <div class="tile">Inventory<span class="tag">Installed</span></div>
+            <div class="tile">POS<span class="tag">Installed</span></div>
+            <div class="tile">Sales<span class="tag">Installed</span></div>
+            <div class="tile">Procurement<span class="tag">Installed</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>POS</h3>
+          <div class="box">
+            <div class="order-table">
+              <table>
+                <thead><tr><th>ID</th><th>Item</th><th>QTY</th><th>Price</th></tr></thead>
+                <tbody>
+                  <tr><td>1</td><td>Search item</td><td>0</td><td>0</td></tr>
+                  <tr><td>2</td><td>Search item</td><td>0</td><td>0</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="big-total">UGX 0</div>
+            <button class="primary">Submit Order To Cashier</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Sales</h3>
+          <div class="list">
+            <div class="list-item">POS-20260328-61783C <span class="pill success">Released</span>
+              <div class="muted">UGX 81,003,335</div>
+            </div>
+            <div class="list-item">POS-20260328-20B5E8 <span class="pill success">Released</span>
+              <div class="muted">UGX 1,200,000</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Inventory</h3>
+          <div class="list">
+            <div class="list-item">asdd — Qty: 11,587 <span class="ok">OK</span></div>
+            <div class="list-item">hhh — Qty: 5,324 <span class="ok">OK</span></div>
+          </div>
+        </article>
+
+        <article class="card wide">
+          <h3>Accounting</h3>
+          <div class="account-row">
+            <div class="stat in">SALES INFLOW<br><strong>USh 83,016,953</strong></div>
+            <div class="stat out">PURCHASE OUTFLOW<br><strong>USh 18,617,301</strong></div>
+            <div class="stat net">NET CASH POSITION<br><strong>USh 64,399,652</strong></div>
+          </div>
+          <div class="recent">
+            <div class="recent-item">asdd — USh 81,003,335</div>
+            <div class="recent-item">hhh — USh 1,200,000</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Users</h3>
+          <div class="user-card">
+            <div class="u">thomas</div>
+            <div class="muted">Owner — hh</div>
+            <div class="pill success">Active</div>
+          </div>
+        </article>
+
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>

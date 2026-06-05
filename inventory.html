@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Inventory — La Rose</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">hh</div>
+      <div class="business-card">
+        <label>BUSINESS</label>
+        <select id="branch-select" title="Select business branch">
+          <option>hh</option>
+        </select>
+      </div>
+      <nav class="apps-list">
+        <a class="app-btn" href="index.html">Dashboard</a>
+        <a class="app-btn active" href="inventory.html">Inventory</a>
+        <a class="app-btn" href="pos.html">POS</a>
+        <a class="app-btn" href="sales.html">Sales</a>
+        <a class="app-btn" href="purchases.html">Purchases</a>
+        <a class="app-btn" href="accounting.html">Accounting</a>
+        <a class="app-btn" href="reports.html">Reports</a>
+        <a class="app-btn" href="users.html">Users</a>
+        <a class="app-btn" href="payroll.html">Payroll</a>
+        <a class="app-btn" href="truck.html">Truck</a>
+        <a class="app-btn" href="settings.html">Settings</a>
+        <a class="app-btn" href="apps.html">Installed Apps</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="left">Inventory</div>
+        <div class="right">Inventory • hh</div>
+      </header>
+
+      <section class="grid">
+        <article class="card">
+          <h3>Stock</h3>
+          <div class="list" id="inventory-list">
+            <div class="list-item">asdd — Qty: 11,587 <span class="ok">OK</span></div>
+            <div class="list-item">hhh — Qty: 5,324 <span class="ok">OK</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Add Item</h3>
+          <div class="box">
+            <input placeholder="Item name" class="demo-input" id="inventory-name">
+            <div class="row-flex">
+              <input placeholder="Opening qty" class="demo-input" id="inventory-qty">
+              <input placeholder="Reorder level" class="demo-input" id="inventory-reorder">
+            </div>
+            <button class="primary" id="inventory-add">Add Item</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
