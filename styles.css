@@ -70,7 +70,7 @@ html,body{height:100%;margin:0;background:var(--bg);color:#222}
 .row-flex{display:flex;gap:8px;margin-top:8px}
 .row-flex > .demo-input{flex:1}
 
-@media (max-width:800px){
+@media (max-width:480px){
   .sidebar{display:none}
   .card.wide{grid-column:auto}
 }

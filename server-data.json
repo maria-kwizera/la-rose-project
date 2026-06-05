@@ -12,13 +12,17 @@
     }
   ],
   "sessions": {
-    "7b12ea37-2f74-410d-a7f7-60ff9e094672": {
+    "ea52e3ff-2654-4d41-9367-591079961594": {
+      "username": "admin",
+      "role": "Owner"
+    },
+    "dbb0682e-7929-47bc-9600-2ec89e9f5584": {
       "username": "admin",
       "role": "Owner"
     }
   },
   "notes": {
-    "index.html": "hi"
+    "index.html": "integration test note from assistant"
   },
   "data": {}
 }
