@@ -19,10 +19,27 @@
     "dbb0682e-7929-47bc-9600-2ec89e9f5584": {
       "username": "admin",
       "role": "Owner"
+    },
+    "d951c3b2-9500-4dfb-83ed-8a9ab73d4c06": {
+      "username": "admin",
+      "role": "Owner"
+    },
+    "92bf3320-bc1c-427d-a87d-a009264cb887": {
+      "username": "thomas",
+      "role": "User"
+    },
+    "15949504-8f68-48f6-bd03-6821d7974a70": {
+      "username": "admin",
+      "role": "Owner"
+    },
+    "0ab9b1e3-6904-4459-8a9c-a3028da0788d": {
+      "username": "admin",
+      "role": "Owner"
     }
   },
   "notes": {
-    "index.html": "integration test note from assistant"
+    "index.html": "integration test note from assistant",
+    "truck.html": "jhgfdfghjkkjjknjk"
   },
   "data": {}
 }

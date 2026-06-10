@@ -1,4 +1,10 @@
-﻿const API_BASE = ''
+﻿const getApiBase = () => {
+  if (typeof window === 'undefined') return ''
+  if (window.location.protocol === 'file:') return 'http://localhost:3000'
+  return ''
+}
+
+const API_BASE = getApiBase()
 const TOKEN_KEY = 'auth.token'
 
 const request = async (url, options = {}) => {
@@ -11,12 +17,19 @@ const request = async (url, options = {}) => {
     config.body = JSON.stringify(config.body)
   }
 
-  const res = await fetch(`${API_BASE}${url}`, config)
-  const body = await res.json().catch(() => ({}))
-  if (!res.ok) {
-    throw new Error(body.message || 'Request failed')
+  try {
+    const res = await fetch(`${API_BASE}${url}`, config)
+    const body = await res.json().catch(() => ({}))
+    if (!res.ok) {
+      throw new Error(body.message || 'Request failed')
+    }
+    return body
+  } catch (error) {
+    if (error instanceof TypeError) {
+      throw new Error('Unable to reach the server. Start the app with "npm start" and try again.')
+    }
+    throw error
   }
-  return body
 }
 
 const redirect = (path) => {
